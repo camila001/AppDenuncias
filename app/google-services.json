@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "109612896240",
+    "firebase_url": "https://appdenuncias-dafb7.firebaseio.com",
+    "project_id": "appdenuncias-dafb7",
+    "storage_bucket": "appdenuncias-dafb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109612896240:android:33e71f601e2363ab1a9735",
+        "android_client_info": {
+          "package_name": "com.camila.appdenuncias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109612896240-7sc976glp7eo3te7qp3h51mut626ic0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxW6pAhvqjYgfs9lTa5YjRKzpfBgAJsrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109612896240-7sc976glp7eo3te7qp3h51mut626ic0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AppDenuncias</string>
+    <string name="tab_text_1">Mis denuncias</string>
+    <string name="tab_text_2">Denunciar</string>
+    <string name="tab_text_3">Denuncias</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">211049797128588</string>
+    <string name="fb_login_protocol_scheme">fb211049797128588</string>
+</resources>

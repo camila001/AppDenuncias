@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="@drawable/fondo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Creado por:"
+        android:textColor="#DAFFFFFF"
+        android:layout_above="@id/card"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/handlee"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/card">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagen"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/flowey"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camila Acuña"
+            android:fontFamily="@font/handlee"
+            android:layout_marginVertical="12dp"
+            android:textColor="#353434"
+            android:layout_toRightOf="@id/imagen"
+            android:textSize="22dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estudiante de Analista Programador"
+            android:fontFamily="@font/handlee"
+            android:textColor="#353434"
+            android:layout_toRightOf="@id/imagen"
+            android:layout_below="@+id/nombre"
+            android:textSize="18dp"
+            />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_back"
+        android:onClick="backtoLogin"
+        />
+
+</RelativeLayout>

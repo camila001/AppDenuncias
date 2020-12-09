@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/fondo">
+
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Denuncias Ciudadanas"
+        android:fontFamily="@font/tangerine"
+        android:textSize="40dp"
+        android:textColor="#E86258"
+        android:layout_below="@id/img_book"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        android:padding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/titulo"
+        >
+
+        <TextView
+            android:id="@+id/txt_registrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrate!"
+            android:textColor="#CB393636"
+            android:textStyle="bold"
+            android:fontFamily="@font/handlee"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solo te tomará unos minutos"
+            android:textColor="#CB393636"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/handlee"
+            android:textSize="20dp"
+            android:layout_below="@id/txt_registrate"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/txt_2"
+            />
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/txt_2"
+            android:layout_toRightOf="@id/img_user"
+            />
+
+        <ImageView
+            android:id="@+id/img_user2"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/img_user"
+            />
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:layout_below="@id/register_email"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_user2"
+            />
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_phone"
+            android:layout_below="@id/img_user2"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="11dp"
+            />
+
+        <EditText
+            android:id="@+id/register_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefono"
+            android:inputType="phone"
+            android:layout_below="@id/register_name"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_user2"
+            />
+
+        <ImageView
+            android:id="@+id/img_pass"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_pass"
+            android:layout_below="@id/img_phone"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="11dp"
+            />
+
+        <EditText
+            android:id="@+id/register_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_below="@id/register_phone"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/img_pass"
+            />
+
+        <Button
+            android:id="@+id/crear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:onClick="createAccount"
+            android:layout_below="@id/register_pass"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/sh_button"
+            />
+
+        <TextView
+            android:id="@+id/asd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes cuenta?"
+            android:layout_below="@id/crear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/handlee"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/asd"
+            android:layout_centerHorizontal="true"
+            android:text="Inicia sesión"
+            android:fontFamily="@font/handlee"
+            android:textColor="#006EC6"
+            android:textSize="20dp"
+            android:onClick="backtoLogin"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

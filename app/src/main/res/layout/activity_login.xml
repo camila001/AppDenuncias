@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/img_book"
+        android:layout_width="165dp"
+        android:layout_height="152dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/book" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Denuncias Ciudadanas"
+        android:fontFamily="@font/tangerine"
+        android:textSize="40dp"
+        android:textColor="#E86258"
+        android:layout_below="@id/img_book"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/card"
+        android:layout_marginHorizontal="20dp"
+        android:layout_below="@id/titulo"
+        >
+
+        <TextView
+            android:id="@+id/txt_hola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hola! Gusto en verte"
+            android:textColor="#CB393636"
+            android:textStyle="bold"
+            android:fontFamily="@font/handlee"
+            android:textSize="25dp"
+            />
+
+        <TextView
+            android:id="@+id/iniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicia sesión para continuar:"
+            android:textColor="#CB393636"
+            android:fontFamily="@font/handlee"
+            android:layout_below="@id/txt_hola"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_name"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/iniciar"
+            />
+
+        <ImageView
+            android:id="@+id/img_pass"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_pass"
+            android:layout_below="@id/img_user"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="11dp"
+            />
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo electronico"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:padding="10dp"
+            android:layout_toRightOf="@id/img_user"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/iniciar"
+            />
+
+        <EditText
+            android:id="@+id/login_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:layout_toRightOf="@id/img_pass"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/login_email"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sesión"
+            android:onClick="signIn"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/login_pass"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/sh_button"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/registrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrate aquí!"
+        android:fontFamily="@font/handlee"
+        android:textColor="#2196F3"
+        android:onClick="launchRegister"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About me"
+        android:fontFamily="@font/handlee"
+        android:textColor="#2196F3"
+        android:onClick="launchAbout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

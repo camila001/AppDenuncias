@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.main.Denunciar">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card"
+        android:padding="12dp"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:id="@+id/denuncia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Qué quieres denunciar?"
+            android:textSize="20sp"
+            android:fontFamily="@font/handlee"
+            android:textColor="#CB393636"
+            android:layout_marginBottom="8dp"
+            />
+
+        <EditText
+            android:id="@+id/nuevo_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Breve descripción"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:padding="10dp"
+            android:layout_below="@id/denuncia"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/donde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nuevo_titulo"
+            android:text="¿Dónde?"
+            android:textSize="20sp"
+            android:fontFamily="@font/handlee"
+            android:textColor="#CB393636"
+            android:layout_marginBottom="8dp"
+            />
+
+        <EditText
+            android:id="@+id/nuevo_direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:layout_below="@id/donde"
+            android:fontFamily="@font/handlee"
+            android:background="@drawable/sh_edit"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_denunciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar denuncia"
+            android:layout_below="@id/nuevo_direccion"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:paddingHorizontal="20dp"
+            android:background="@drawable/sh_button"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
